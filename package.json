@@ -1,0 +1,39 @@
+{
+  "name": "babel-plugin-css-module-parse",
+  "version": "1.0.0",
+  "description": "Babel plugin for transforming css module references to strings with prefix.",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src -d lib -s",
+    "prepack": "npm run build",
+    "lint": "eslint --ext .js src",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "test": "jest --coverage"
+  },
+  "author": "aixfox",
+  "license": "MIT",
+  "repository": "https://github.com/aixfox/babel-plugin-css-module-parse",
+  "files": [
+    "lib/*.js$"
+  ],
+  "keywords": [
+    "babel-plugin",
+    "css module"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-transform-remove-strict-mode": "0.0.2",
+    "coveralls": "^3.0.9",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "jest": "^24.9.0"
+  },
+  "engines": {
+    "node": ">= 8.0.0"
+  }
+}
